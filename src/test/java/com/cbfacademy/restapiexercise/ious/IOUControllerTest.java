@@ -18,6 +18,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import com.cbfacademy.restapiexercise.ProjectApplication;
 import com.cbfacademy.restapiexercise.core.ApiErrorResponse;
+import com.cbfacademy.restapiexercise.core.IOUNotFoundException;
 
 import java.math.BigDecimal;
 import java.net.URI;

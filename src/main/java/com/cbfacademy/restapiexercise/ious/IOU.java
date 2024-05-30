@@ -4,13 +4,20 @@ import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.UUID;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class IOU {
 
-    private final UUID id;
+    @Id
+    private UUID id;
     private String borrower;
     private String lender;
     private BigDecimal amount;
     private Instant dateTime;
+
+    public IOU(){ id =  UUID.randomUUID();}
 
     public IOU(String borrower, String lender, BigDecimal amount, Instant datetime) {
         id =  UUID.randomUUID();
